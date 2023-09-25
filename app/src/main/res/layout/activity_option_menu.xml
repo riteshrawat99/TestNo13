@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionMenuActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+        app:menu="@menu/popup_menu"
+        app:title="Option Menu"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/popup_menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show PopUp Meu"
+        android:textSize="20sp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_menu_btn"
+        />
+
+
+</RelativeLayout>
